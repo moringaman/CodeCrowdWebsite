@@ -51,38 +51,38 @@
       </v-btn> -->
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn
+      <!-- <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
       >
         <v-icon>mdi-menu</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
     <v-content>
-        <v-parallax
-          id="header-image"
-          src="https://images.unsplash.com/photo-1568992688243-52608227497d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-          max-width="100%"
-          height="300"
-          gradient="17deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%"
-        />
+      <v-parallax
+        id="header-image"
+        src="https://images.unsplash.com/photo-1568992688243-52608227497d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        max-width="100%"
+        height="300"
+        gradient="17deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%"
+      />
       <v-container>
         <h1
           id="heading"
           class="banner-heading"
         >
-        CodeCrowd
-       </h1>
+          CodeCrowd
+        </h1>
         <h1
           id="heading-2"
           class="banner-heading"
         >
-        Catford
-       </h1>
+          Catford
+        </h1>
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
       temporary
@@ -98,12 +98,12 @@
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-footer
       :fixed="fixed"
       app
     >
-      <span>&copy; 2019</span>
+      <span>&copy; 2019 CodeCrowd - All rights reserved </span>
     </v-footer>
   </v-app>
 </template>
