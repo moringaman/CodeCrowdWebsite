@@ -1,10 +1,14 @@
 const colors = require('vuetify/es5/util/colors').default
+require('dotenv').config({filename: '.env'})
 
 module.exports = {
   mode: 'universal',
   /*
   ** Headers of the page
   */
+  env: {
+    firebaseapikey: process.env.FIREBASE_API_KEY
+  },
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
     title: process.env.npm_package_name || '',
@@ -37,7 +41,7 @@ module.exports = {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
   /*
   ** Nuxt.js modules
@@ -45,7 +49,8 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Axios module configuration

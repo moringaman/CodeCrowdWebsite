@@ -92,6 +92,29 @@
   </v-layout>
 </template>
 
+<script>
+import { mapActions } from 'vuex'
+export default {
+  data () {
+    return {
+      meetups: [
+        {}
+      ]
+    }
+  },
+  computed: {
+  },
+  created () {
+    this.env()
+  },
+  methods: {
+    ...mapActions(['logEnvironment']),
+    env () {
+      this.logEnvironment()
+    }
+  }
+}
+</script>
 <style lang="scss">
   .meetup-card {
     margin: 10px 0px;

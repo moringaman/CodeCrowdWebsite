@@ -1,14 +1,14 @@
-import * as firebase from 'firebase'
+import * as firebase from 'firebase' 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDxtAc6z4YcXoXVStpHgXEwFV_-5bIrFkU",
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: "codecrowdweb.firebaseapp.com",
     databaseURL: "https://codecrowdweb.firebaseio.com",
     projectId: "codecrowdweb",
     storageBucket: "codecrowdweb.appspot.com",
-    messagingSenderId: "1095456068548",
-    appId: "1:1095456068548:web:79a576700b0eb26f414a91",
-    measurementId: "G-3RJQ181XQV"
+    messagingSenderId: process.env.FIREBASE_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID,
+    measurementId: process.env.FIREBASE_MEASUREMENT_ID
   };
 
 
