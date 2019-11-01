@@ -67,6 +67,13 @@
         gradient="17deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%"
       />
       <v-container>
+        <div class="heading-container">
+        <h1
+          id="heading-3"
+          class="banner-heading"
+        >
+          The
+        </h1>
         <h1
           id="heading"
           class="banner-heading"
@@ -79,6 +86,7 @@
         >
           Catford
         </h1>
+        </div>
         <nuxt />
       </v-container>
     </v-content>
@@ -130,7 +138,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'CodeCrowd'
+      title: 'The CodeCrowd'
     }
   }
 }
@@ -138,15 +146,20 @@ export default {
 
 <style lang="scss">
 #header-image {
-  margin-top: -30px;
+  margin-top: -10px;
+}
+.heading-container {
+  margin-left: 2%;
 }
 #heading {
   transform: rotateZ(-4deg) translateY(-200px);
-  margin-left: 10%;
   z-index: 1000;
   &-2 {
   transform: rotateZ(2deg) translate(-246px, -120px);
   // margin-left: 10%;
+  }
+  &-3 {
+    transform: translate(176px, -270px);
   }
 }
 .banner-heading {
