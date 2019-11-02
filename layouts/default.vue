@@ -51,6 +51,8 @@
       </v-btn> -->
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <v-btn class="mr-2" to="/inspire">Meetups</v-btn>
+      <v-btn class="mr-2" outlined>Login</v-btn>
       <!-- <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
@@ -66,7 +68,7 @@
         height="300"
         gradient="17deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%"
       />
-      <v-container>
+      <v-container grid-list-xl>
         <div class="heading-container">
         <h1
           id="heading-3"
@@ -153,7 +155,7 @@ export default {
 }
 #heading {
   transform: rotateZ(-4deg) translateY(-200px);
-  z-index: 1000;
+  // z-index: 1000;
   &-2 {
   transform: rotateZ(2deg) translate(-246px, -120px);
   // margin-left: 10%;
