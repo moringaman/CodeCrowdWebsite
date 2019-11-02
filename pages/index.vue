@@ -1,5 +1,5 @@
 <template>
-  <v-layout row justify-space-around mt-12>
+  <v-layout row justify-space-around mt-12 style="max-width: 1200px; margin: auto">
     <v-flex xs12 md12 sm12>
         <div class="text-center mt-9 mb-12">
           <h1>Welcome to The CodeCrowd</h1>

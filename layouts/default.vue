@@ -89,7 +89,7 @@
           Catford
         </h1>
         </div>
-        <nuxt />
+          <nuxt />
       </v-container>
     </v-content>
     <!-- <v-navigation-drawer
@@ -153,7 +153,7 @@ export default {
 }
 .heading-container {
   position: absolute;
-  margin-left: 17%;
+  margin-left: 15%;
   transform: translateY(40px);
   max-width: 300px;
 }

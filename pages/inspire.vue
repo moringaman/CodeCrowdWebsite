@@ -1,8 +1,8 @@
 <template>
-  <v-layout row justify-space-around>
-    <v-flex xs12 md12 sm12>
-        <div class="text-center">
-          <h1>The CodeCrowd Meetups</h1>
+  <v-layout row justify-space-around mt-12 lg10 style="max-width: 1200px; margin: auto">
+    <v-flex lg10 xl10 xs12 md12 sm12>
+        <div class="text-center mb-8">
+          <h1>Latest CodeCrowd Meetups</h1>
         </div>
     </v-flex>
       <v-flex
@@ -14,9 +14,9 @@
           class="mx-auto"
          >
           <v-img
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
             width="100%"
-            height="200"
+            height="400"
           />
          <v-card-text>
            <v-row>
@@ -43,7 +43,7 @@
           class="mx-auto"
          >
           <v-img
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            src="https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
             width="100%"
             height="200"
           />
