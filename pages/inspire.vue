@@ -150,8 +150,49 @@
       </v-card-text>
     </v-card>
     </v-flex>
-    <v-flex md6 sm12 xs12>Empty</v-flex>
-    <v-flex md6 sm12 xs12>
+    <v-flex md6 sm6 xs12>
+      <div class="address">
+        <div class="title" title>Contact Us
+        </div>
+        <div class="contact-area">
+          <div class="contacts">
+            <v-row>
+              <v-col
+                cols="1"
+              >
+                <v-icon>mdi-at</v-icon>
+              </v-col>
+              <v-col>
+                <div class="caption">
+                  info@thecodecrowd.co.uk
+                </div>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="1">
+                <v-icon>mdi-phone</v-icon>
+              </v-col>
+              <v-col>
+                <div class="caption">
+                  020 3005 9450
+                </div>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="1">
+                <v-icon>mdi-discord</v-icon>
+              </v-col>
+              <v-col>
+                <div class="caption">
+                 thecodecrowd
+                </div>
+              </v-col>
+            </v-row>
+          </div>
+        </div>
+      </div>
+    </v-flex>
+    <v-flex md6 sm6 xs12>
       <v-card
         color="yellow darken-4"
       >

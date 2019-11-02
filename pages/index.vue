@@ -1,7 +1,7 @@
 <template>
-  <v-layout row justify-space-around>
+  <v-layout row justify-space-around mt-12>
     <v-flex xs12 md12 sm12>
-        <div class="text-center">
+        <div class="text-center mt-9 mb-12">
           <h1>Welcome to The CodeCrowd</h1>
         </div>
       <v-card
@@ -84,8 +84,49 @@
       </v-card-text>
     </v-card>
     </v-flex>
-    <v-flex md6 sm12 xs12>Empty</v-flex>
-    <v-flex md6 sm12 xs12>
+    <v-flex md6 sm6 xs12>
+      <div class="address">
+        <h2>Contact Us
+        </h2>
+        <div class="contact-area">
+          <div class="contacts">
+            <v-row>
+              <v-col
+                cols="1"
+              >
+                <v-icon>mdi-at</v-icon>
+              </v-col>
+              <v-col>
+                <div class="caption">
+                  info@thecodecrowd.co.uk
+                </div>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="1">
+                <v-icon>mdi-phone</v-icon>
+              </v-col>
+              <v-col>
+                <div class="caption">
+                  020 3005 9450
+                </div>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="1">
+                <v-icon>mdi-discord</v-icon>
+              </v-col>
+              <v-col>
+                <div class="caption">
+                 thecodecrowd
+                </div>
+              </v-col>
+            </v-row>
+          </div>
+        </div>
+      </div>
+    </v-flex>
+    <v-flex md6 sm6 xs12>
       <v-card
         color="yellow darken-4"
       >
@@ -122,3 +163,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+ .address {
+   padding: 1rem;
+ }
+ .contact-area {
+   margin-top: 1rem;
+ }
+</style>

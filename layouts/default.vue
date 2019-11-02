@@ -149,19 +149,23 @@ export default {
 <style lang="scss">
 #header-image {
   margin-top: -10px;
+  margin-bottom: -40px;
 }
 .heading-container {
-  margin-left: 2%;
+  position: absolute;
+  margin-left: 17%;
+  transform: translateY(40px);
+  max-width: 300px;
 }
 #heading {
-  transform: rotateZ(-4deg) translateY(-200px);
+  transform: rotateZ(-4deg) translate(-50px, -265px);
   // z-index: 1000;
   &-2 {
-  transform: rotateZ(2deg) translate(-246px, -120px);
+  transform: rotateZ(2deg) translate(-2px, -265px);
   // margin-left: 10%;
   }
   &-3 {
-    transform: translate(176px, -270px);
+    transform: translate(6px, -250px);
   }
 }
 .banner-heading {
