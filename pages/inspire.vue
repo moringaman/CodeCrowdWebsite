@@ -72,7 +72,7 @@
           class="mx-auto"
          >
           <v-img
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            src="https://images.unsplash.com/photo-1519074002996-a69e7ac46a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
             width="100%"
             height="200"
           />
@@ -101,7 +101,7 @@
           class="mx-auto"
          >
           <v-img
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
             width="100%"
             height="200"
           />
@@ -195,12 +195,13 @@
     <v-flex md6 sm6 xs12>
       <v-card
         color="yellow darken-4"
+        height="220"
       >
       <v-card-title>
-       Please send me info about meetups in my area
+        Newsletter
       </v-card-title>
       <v-card-text>
-        <v-form>
+        <v-form class="mt-8">
           <v-row>
             <v-col col="12" md="8">
               <v-text-field
@@ -212,6 +213,7 @@
             <v-col>
               <v-btn large>SUBSCRIBE</v-btn>
             </v-col>
+            Please send me info about meetups in my area
           </v-row>
         </v-form>
       </v-card-text>

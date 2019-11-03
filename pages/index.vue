@@ -129,6 +129,7 @@
     <v-flex md6 sm6 xs12>
       <v-card
         color="yellow darken-4"
+        height="200"
       >
       <v-card-title>
        Please send me info about meetups in my area
