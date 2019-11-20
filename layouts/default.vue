@@ -31,11 +31,8 @@
       class="yellow darken-4 black--text"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
+      <v-btn icon @click.stop="miniVariant = !miniVariant">
+        <v-icon>mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon>
       </v-btn>
       <!--<v-btn
         icon
@@ -48,7 +45,7 @@
         @click.stop="fixed = !fixed"
       >
         <v-icon>mdi-minus</v-icon>
-      </v-btn> -->
+      </v-btn>-->
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-btn class="mr-2" to="/inspire">Meetups</v-btn>
@@ -58,7 +55,7 @@
         @click.stop="rightDrawer = !rightDrawer"
       >
         <v-icon>mdi-menu</v-icon>
-      </v-btn> -->
+      </v-btn>-->
     </v-app-bar>
     <v-content>
       <v-parallax
@@ -70,26 +67,11 @@
       />
       <v-container grid-list-xl>
         <div class="heading-container">
-        <h1
-          id="heading-3"
-          class="banner-heading"
-        >
-          The
-        </h1>
-        <h1
-          id="heading"
-          class="banner-heading"
-        >
-          CodeCrowd
-        </h1>
-        <h1
-          id="heading-2"
-          class="banner-heading"
-        >
-          Catford
-        </h1>
+          <h1 id="heading-3" class="banner-heading">The</h1>
+          <h1 id="heading" class="banner-heading">CodeCrowd</h1>
+          <h1 id="heading-2" class="banner-heading">Catford</h1>
         </div>
-          <nuxt />
+        <nuxt />
       </v-container>
     </v-content>
     <!-- <v-navigation-drawer
@@ -108,42 +90,39 @@
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer> -->
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; 2019 CodeCrowd - All rights reserved </span>
+    </v-navigation-drawer>-->
+    <v-footer :fixed="fixed" app>
+      <span>&copy; 2019 CodeCrowd - All rights reserved</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+          icon: "mdi-apps",
+          title: "Welcome",
+          to: "/"
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Meetups',
-          to: '/inspire'
+          icon: "mdi-chart-bubble",
+          title: "Meetups",
+          to: "/inspire"
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'The CodeCrowd'
-    }
+      title: "The CodeCrowd"
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -161,8 +140,8 @@ export default {
   transform: rotateZ(-4deg) translate(-50px, -265px);
   // z-index: 1000;
   &-2 {
-  transform: rotateZ(2deg) translate(-2px, -265px);
-  // margin-left: 10%;
+    transform: rotateZ(2deg) translate(-2px, -265px);
+    // margin-left: 10%;
   }
   &-3 {
     transform: translate(6px, -250px);

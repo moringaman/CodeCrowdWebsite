@@ -1,9 +1,9 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-import modules from './modules'
+import modules from "./modules";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 // export default new Vuex.Store({
 // modules,
@@ -12,7 +12,7 @@ Vue.use(Vuex)
 const createStore = () => {
   return new Vuex.Store({
     modules
-  })
-}
+  });
+};
 
-export default createStore
+export default createStore;
